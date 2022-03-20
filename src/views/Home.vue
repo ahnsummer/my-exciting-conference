@@ -9,14 +9,13 @@
         :style="doorStyle"
       >
         <div 
+          class="w-16 h-16 border-2 border-white absolute top-1/2 left-5 transform -translate-y-1/2"
           @touchstart="startSliding"
           @touchmove="sliding"
           @touchend="endSliding"
-          class="w-16 h-16 border-2 border-white absolute top-1/2 left-5 transform -translate-y-1/2"
         >
-          handle
         </div>
-        open the door please
+        open the door please -->
       </div>
     </div>
   </div>
@@ -39,7 +38,7 @@ export default {
       }
     });
     const startSliding = (e) => {
-      console.log("start sliding");
+      //console.log("start sliding");
       startPosition = e.touches[0].clientX;
     };
     const sliding = (e) => {
@@ -69,7 +68,7 @@ export default {
       doorStyle,
       startSliding,
       sliding,
-      endSliding
+      endSliding,
     }
   }
   
